@@ -11,14 +11,14 @@ fb_size = 30
 count = 1
 
 while count <= fb_size:
-    if count % 3 == 0 and count % 5 != 0:
+    if count % 3 == 0 and count % 5 == 0:
+        fb_seq.append("FizzBuzz")
+        count += 1
+    elif count % 3 == 0:
         fb_seq.append("Fizz")
         count += 1
-    elif count % 5 == 0 and count % 3 != 0:
+    elif count % 5 == 0:
         fb_seq.append("Buzz")
-        count += 1
-    elif count % 3 == 0 and count % 5 == 0:
-        fb_seq.append("FizzBuzz")
         count += 1
     else:
         fb_seq.append(count)
